@@ -9,5 +9,10 @@ package dnd_outcome_calculator;
  * @author Emilia Skye Hills - HLLMIC031 - University of Cape Town
  */
 public class Creature {
-    
+    /*
+    Has the Following qualities
+    Statistics
+    A Position
+    A list of Features
+    */
 }
