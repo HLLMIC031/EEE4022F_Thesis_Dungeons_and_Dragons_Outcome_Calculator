@@ -9,9 +9,10 @@ import dnd_outcome_calculator.*;
  * @author Emilia Skye Hills - HLLMIC031 - University of Cape Town
  */
 public class StateSpace {//might need to just move all this into main
+    //NB Idea Damage valued at percentage of boss remaining health
     
     /*
-    Steps are as follows:
+    Standard Steps are as follows:
         0       Combat Start
         1       Turn Start
         2       Turn End
@@ -21,17 +22,18 @@ public class StateSpace {//might need to just move all this into main
         6       Saving Throw
         7       Attack Action
         8       Attack
-        9       Hit
-        10      Move
-        11      Move into
-        12      Move through
-        13      Move From
-        14      Leave Melee Range
-        15      Dash
-        16      Disengage
-        17      Bonus Action
+        9       Attacked
+        10      Hit
+        11      Move
+        12      Move into
+        13      Move through
+        14      Move From
+        15      Leave Melee Range
+        16      Dash
+        17      Disengage
+        18      Bonus Action
     */
-    //reminder, make all of these into seperate integers
+    //reminder, make all of these into seperate integers, also make creatures generate critical ones for themself
     
     private int steps = 15;//is incomplete
     
@@ -49,4 +51,5 @@ public class StateSpace {//might need to just move all this into main
     
     public Flags flags=new Flags(steps, targets);
     
+    //trigger lists include effects (like attack) with each relevant condition (like advantage)
 }
